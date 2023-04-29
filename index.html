@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Pick</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <label for="inputImagem" class="input-label">
+    <span>Select a Image</span>
+    <input type="file" id="inputImagem" accept="image/png, image/jpeg, image/jpg">
+  </label>
+
+
+  <div class="container-left" style="visibility: hidden;">
+    <img id="image" src="./img.jpg" alt="Imagem">
+  </div>
+
+  <div class="container-right" style="visibility: hidden;">
+
+    <div class="color-code">
+      <span id="color-type">RGB:</span>
+      <span id="color-type">rgb(255, 255, 255)</span>
+    </div>
+
+    <div class="color-code">
+      <span id="color-type">HEX:</span>
+      <span id="color-type">#fffff</span>
+    </div>
+
+
+    <div id="pallet"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
